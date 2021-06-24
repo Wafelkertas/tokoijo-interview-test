@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_graph"
+    app:startDestination="@id/productFragment">
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.tokopedia.filter.view.ProductFragment"
+        android:label="ProductFragment" >
+        <action
+            android:id="@+id/action_productFragment_to_bottomSheetFilterFragment"
+            app:destination="@id/bottomSheetFilterFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/bottomSheetFilterFragment"
+        android:name="com.tokopedia.filter.view.BottomSheetFilterFragment"
+        android:label="BottomSheetFilterFragment" >
+        <action
+            android:id="@+id/action_bottomSheetFilterFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </dialog>
+</navigation>

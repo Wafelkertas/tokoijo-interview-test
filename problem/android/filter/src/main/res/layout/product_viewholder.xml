@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/image">
+
+    </ImageView>
+
+    <TextView
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"
+        android:id="@+id/productNameTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="10dp"
+        android:id="@+id/productPriceTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/productLocationTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+</LinearLayout>

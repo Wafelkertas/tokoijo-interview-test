@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".">
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/filter"
+        android:textSize="25sp" />
+
+    <TextView
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/lokasi" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/location_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp" />
+
+
+    <TextView
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/harga" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:id="@+id/lowest_price_EditText"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:hint="@string/terendah"
+            android:textSize="16sp"
+             />
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:id="@+id/highest_price_EditText"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:hint="@string/tertinggi"
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+   <com.google.android.material.slider.RangeSlider
+       android:id="@+id/slider_value"
+       android:valueFrom="0.0"
+       android:valueTo="100.0"
+       app:values="@array/initial_slider_values"
+       android:layout_marginTop="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/filter_button"
+        android:layout_marginStart="150dp"
+        android:text="@string/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
